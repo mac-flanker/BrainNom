@@ -10,6 +10,7 @@ set :deploy_via, :remote_cache
 set :branch, "master"
 set :user, "mike"
 
+set :sudo_prompt, ""
 
 set :deploy_to, "/var/www/#{application}"
 
