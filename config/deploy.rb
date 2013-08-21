@@ -1,3 +1,5 @@
+require 'bundler/capistrano'
+
 set :application, "BrainNom"
 set :repository,  "git@github.com:mac-flanker/BrainNom.git"
 
