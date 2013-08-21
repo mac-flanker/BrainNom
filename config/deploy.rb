@@ -13,9 +13,9 @@ set :user, "mike"
 
 set :deploy_to, "/var/www/#{application}"
 
-role :web, "localhost:3000"                          # Your HTTP server, Apache/etc
-role :app, "localhost:3000"                          # This may be the same as your `Web` server
-role :db,  "localhost:3000", :primary => true # This is where Rails migrations will run
+role :web, "127.0.0.0:3000"                          # Your HTTP server, Apache/etc
+role :app, "127.0.0.1:3000"                          # This may be the same as your `Web` server
+role :db,  "127.0.0.1:3000", :primary => true # This is where Rails migrations will run
 
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
