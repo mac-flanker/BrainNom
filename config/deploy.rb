@@ -7,6 +7,8 @@ set :keep_releases, 3
 
 ssh_options[:keys] = ["/home/mike/.ssh/Mike"]
 
+set :ssh_options, {:forward_agent => true}
+
 set :scm, :git
 set :deploy_via, :remote_cache
 set :branch, "master"
